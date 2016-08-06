@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+#headerWrap
+{
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    background-color: #EAEAEA;
+}
+
+#logoImgWrap
+{
+	float: left;
+	height: 100%;
+}
+
+#logoImg
+{
+	
+}
+
+#naviWrap
+{
+	float: right;
+	margin-top: 8px;
+}
+
+#naviList
+{
+	
+}
+
+.naviItem
+{
+	border-right: 1px solid black;
+	padding: 0px 10px 0px 10px;
+}
+
+.naviItem:LAST-CHILD
+{
+	border: 0;
+}
+
+.naviItemLink
+{
+	
+}
