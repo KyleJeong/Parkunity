@@ -8,7 +8,7 @@
 <link href="../../css/header.css" rel="stylesheet">
 </head>
 <body>
-	<div id="headerWrap">
+	<header id="headerWrap">
 		<div id="logoImgWrap">
 			<img id="logoImg" src="http://placehold.it/200x40">
 		</div>
@@ -21,6 +21,6 @@
 				<li class="naviItem"><a class="naviItemLink" href="">Login</a></li>
 			</ul>
 		</div>
-	</div>
+	</header>
 </body>
 </html>
