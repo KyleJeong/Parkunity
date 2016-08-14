@@ -4,7 +4,7 @@
 {
     height: 40px;
     padding: 10px 20px 10px 20px;
-    background-color: #EAEAEA;
+    background-color: #ffffff;
 }
 
 #logoImgWrap
@@ -35,6 +35,11 @@
 	padding: 0px 10px 0px 10px;
 }
 
+.naviItem a:hover
+{
+	color:#0080ff;
+}
+
 .naviItem:LAST-CHILD
 {
 	border: 0;
@@ -42,5 +47,5 @@
 
 .naviItemLink
 {
-	
+	font-weight: bolder;
 }

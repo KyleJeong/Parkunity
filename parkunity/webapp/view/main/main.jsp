@@ -15,40 +15,48 @@
 <div id="container">
   <jsp:include page="../include/header.jsp"></jsp:include>
   <section id="content">
-    <h2>동탄 센트럴 파크</h2>    
-     <article>
-     	<img src="../../image/main/1.jpg" alt="" class="1">
-     	<img src="../../image/main/2.jpg" alt="" class="1">
+     <article >
+     	<div id="image" class="1">
      	
-     	<a  style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">((((((</a>
-		<a  style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">))))))</a>
+     	</div>
+     	<div id="image1" class="1">
+     	
+     	</div>
+     	
+     	<a  style="position:absolute;top:43%;left:3%" onclick="plusDivs(-1)">
+     		<img src="../../image/main/left.png" alt="" width="50" height="50">
+     	</a>
+		<a  style="position:absolute;top:43%;right:3%" onclick="plusDivs(1)">
+			<img src="../../image/main/right.png" alt="" width="50" height="50">
+		</a>
   	</article>
-  	
-  	
   </section>
   <aside id="sidebar">
-    <img src="../../image/main/1.jpg" alt=""  width="470" height="150" >
-    <img src="../../image/main/2.jpg" alt=""  width="470" height="150">
-  </aside>    
-  <footer id="footer">
-    <p>Parkunity</p>
-    <address>
-    Copyright â. All rights reserved.
-    </address>
-  </footer>
+  	<ul>
+  		<li>
+  		<img src="../../image/main/soccer.png" alt="" id="soccer" width="80" height="80" >
+  		<p>운동</p>
+  		</li>
+  		<li><img src="../../image/main/info.png" alt=""  width="80" height="80">
+  		<p>꿀팁</p>
+  		</li>
+  	</ul>
+  </aside>   
+  
+  <jsp:include page="../include/footer.jsp"></jsp:include> 
 </div>
 </body>
-<script src="../../js/main.js"></script>
+<!-- <script src="../../js/main.js"></script> -->
 <script>
 
-window.onload	= function () {
+/* window.onload	= function () {
 	console.log(main._name);
 	console.log(main.getName());
 	console.log(main.setName("jh"));
 	console.log(main.getName());
 	
 };
-
+ */
 
 var slideIndex = 1;
 showDivs(slideIndex);
