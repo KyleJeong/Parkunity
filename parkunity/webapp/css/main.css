@@ -1,33 +1,34 @@
 @charset "utf-8";
-body {
-	background-attachment:fixed;	
-}
 #container {	
-	margin : 0 auto;
-	background-color:#fff;
-	border:1px solid #E7E7E7
+	background-color:#ffffff;
+	
 }
 #content {
-	background-color: #ffffff;	
-	display: inline-block;
+}
+
+#image {
+	background-image: url(../image/main/slider.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center center;
+	height:700px;
+}
+
+#image1 {
+	background-image: url(../image/main/aa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center center;
+	height:700px;
 }
 
 #sidebar{
 	padding-top:5px;
 	padding-left:10px;
 }
-#sidebar img:hover{
-	border:1px solid #000;	
-}
-#footer {
-	padding: 10px 0;
-	background-color:#061f1f;
-	color:#fff;
-	text-align:center;
-	clear: both;
-}
-header, section, footer, aside, article, figure {
-	display: block;
+#sidebar li:hover{
+	border:3px solid #0080ff;	
+	
 }
 @media screen and (max-width:559px) {
 #container{
@@ -37,6 +38,7 @@ header, section, footer, aside, article, figure {
 	width: 310px;
 	padding:5px;
 }
+
 #sidebar {
 	width:320px;
 	margin-top:5px;
@@ -50,43 +52,35 @@ header, section, footer, aside, article, figure {
 }
 @media screen and (min-width:600px) and (max-width:1023px) {
 #container {
-	/* width:580px; */
 }
 #content {	
-	/* width: 550px; */
-	padding:10px;
 }
 #sidebar {
-	/* width: 550px;
-	height:550px;
-	background-color:#dfd;
-	margin-top:5px;
-	margin-left:5px; */
 }
 #sidebar img {
-	/* border: 1px solid #ccc;
-	text-align:center;
-	width:32%; */
 }
 }
 @media screen and (min-width:1024px) {
 #container {
-	/* width:960px; */
 }
-#content {	
-	/* width: 720px;
-	float: center; */
+#content {
 }
 
 #content img{
-    display: block;
-         
 }
 #sidebar {
-	width:960px;
+	padding-top:10px;
+	text-align:center;
 }
-#sidebar img {
-	margin-bottom: 5px;
-	border: 1px solid #ccc;
+#sidebar li {
+	
+	font-weight: bolder;
+	border: 3px solid #000;
+	width:200px;
+	padding: 0px 10px 0px 10px;
+	margin: 20px ;
+	border-radius: 10px;
 }
+
+
 }
