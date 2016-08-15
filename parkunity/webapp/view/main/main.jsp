@@ -17,8 +17,8 @@
   <section id="content">
     <h2>동탄 센트럴 파크</h2>    
      <article>
-     	<img src="../../image/main/1.jpg" alt="" class="1">
-     	<img src="../../image/main/2.jpg" alt="" class="1">
+     	<img src="../../image/main/1.jpg" alt="" class="1" >
+     	<img src="../../image/main/2.jpg" alt="" class="1" >
      	
      	<a  style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">((((((</a>
 		<a  style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">))))))</a>

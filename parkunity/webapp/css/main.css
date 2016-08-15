@@ -1,9 +1,5 @@
 @charset "utf-8";
 body {
-	font: 14px "맑은 고딕";
-	background:linear-gradient(to bottom, skyblue, white 50%);
-	background:-webkit-linear-gradient(top, skyblue, white 50%);
-	background:-moz-linear-gradient(top, skyblue, white 50%);
 	background-attachment:fixed;	
 }
 #container {	
@@ -13,8 +9,6 @@ body {
 }
 #content {
 	background-color: #ffffff;	
-	padding-top:5px;
-	padding-left:10px;
 	display: inline-block;
 }
 
@@ -85,22 +79,14 @@ header, section, footer, aside, article, figure {
 }
 
 #content img{
-	width:940px;
-	height: 400px;
+    display: block;
+         
 }
 #sidebar {
 	width:960px;
-	/* float: right;
-	width: 200px;
-	height:550px;
-	background-color:#dfd;
-	padding-top:20px;
-	padding-left:10px;
-	padding-right:10px; */
 }
 #sidebar img {
 	margin-bottom: 5px;
 	border: 1px solid #ccc;
-	/* text-align:center; */
 }
 }
