@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+#boardListWrap
+{
+	width: 1200px;
+    margin: 0 auto;
+}
+
+#boardListTable
+{
+	width: 100%;
+}
+
+#boardListHead
+{
+	background-color: #EAEAEA;
+}
+
+#boardListHead tr
+{
+	height: 40px;
+}
+
+#boardListBody
+{
+	text-align: center;
+}
+
+#boardListBody tr
+{
+	height: 30px;
+}
+
+#boardListBody tr td:nth-child(2)
+{
+	text-align: left;
+}
+
+#pagingWrap
+{
+	text-align: center;	
+}
+
+#btnWrap
+{
+	text-align: right;
+}
+
+#writeBtn
+{
+	
+}
+
+#searchingWrap
+{
+	text-align: center;
+}
+
+#categorySelect
+{
+	
+}
+
+#searchingKeyword
+{
+	
+}
+
+#searchingBtn
