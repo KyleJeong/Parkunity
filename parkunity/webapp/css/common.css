@@ -15,7 +15,7 @@ ul
 	padding: 0;
 }
 
-li
+#naviList li
 {
 	list-style: none;
 	display: inline-block;

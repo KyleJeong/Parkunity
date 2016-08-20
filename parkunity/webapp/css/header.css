@@ -5,6 +5,7 @@
     height: 40px;
     padding: 10px 20px 10px 20px;
     background-color: #ffffff;
+    border-bottom:1px solid black;
 }
 
 #logoImgWrap

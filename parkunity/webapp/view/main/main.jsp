@@ -48,8 +48,8 @@
 </body>
 <!-- <script src="../../js/main.js"></script> -->
 <script>
-
-/* window.onload	= function () {
+/*
+ window.onload	= function () {
 	console.log(main._name);
 	console.log(main.getName());
 	console.log(main.setName("jh"));

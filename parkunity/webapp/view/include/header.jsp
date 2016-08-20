@@ -14,7 +14,7 @@
 		</div>
 		<div id="naviWrap">
 			<ul id="naviList">
-				<li class="naviItem"><a class="naviItemLink" href="">About</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="../about/about.jsp">About</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="">Creator</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="">Contact us</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="">Sign up</a></li>
