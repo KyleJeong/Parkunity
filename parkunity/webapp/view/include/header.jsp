@@ -10,7 +10,7 @@
 <body>
 	<header id="headerWrap">
 		<div id="logoImgWrap">
-			<img id="logoImg" src="http://placehold.it/200x40">
+			<a href="../main/main.jsp"><img id="logoImg" src="http://placehold.it/200x40"></a>
 		</div>
 		<div id="naviWrap">
 			<ul id="naviList">

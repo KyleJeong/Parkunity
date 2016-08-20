@@ -34,7 +34,7 @@
   <aside id="sidebar">
   	<ul>
   		<li>
-  		<img src="../../image/main/soccer.png" alt="" id="soccer" width="80" height="80" >
+  		<a href="../board/boardList.jsp"><img src="../../image/main/soccer.png" alt="" id="soccer" width="80" height="80" ></a>
   		<p>운동</p>
   		</li>
   		<li><img src="../../image/main/info.png" alt=""  width="80" height="80">

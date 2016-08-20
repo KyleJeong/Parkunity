@@ -82,5 +82,7 @@
 	border-radius: 10px;
 }
 
-
+#sidebar ul li
+{
+	display: inline-block;
 }

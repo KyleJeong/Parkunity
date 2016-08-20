@@ -50,3 +50,9 @@
 {
 	font-weight: bolder;
 }
+
+#naviList li
+{
+	list-style: none;
+	display: inline-block;
+}
