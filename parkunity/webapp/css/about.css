@@ -6,7 +6,7 @@
 section{
 	border : 3px solid black;
 	height : 1200px;
-	width : 1200px;
+	width : 1000px;
 	margin-left : auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -24,7 +24,7 @@ section{
 #img{
 	border : 3px solid black;
 	height : 700px;
-	width : 800px;
+	width : 600px;
 	margin-left : auto;
 	margin-right: auto;
 	background-image: url(../image/about/bb.jpg);
@@ -35,7 +35,7 @@ section{
 #content{
 	border : 3px solid black;
 	height : 300px;
-	width : 800px;
+	width : 600px;
 	margin-left : auto;
 	margin-right: auto;
 	margin-top: 20px;

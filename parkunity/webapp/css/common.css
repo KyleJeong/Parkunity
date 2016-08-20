@@ -15,12 +15,6 @@ ul
 	padding: 0;
 }
 
-#naviList li
-{
-	list-style: none;
-	display: inline-block;
-}
-
 a
 {
 	color: black;

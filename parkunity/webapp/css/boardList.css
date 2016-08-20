@@ -1,9 +1,17 @@
 @CHARSET "UTF-8";
 
+#boardWrap
+{
+    margin: 40px auto;
+    height: 690px;
+    width: 1000px;
+}
+
 #boardListWrap
 {
-	width: 1200px;
-    margin: 0 auto;
+    width: 800px;
+    height: 590px;
+    float: right;
 }
 
 #boardListTable
