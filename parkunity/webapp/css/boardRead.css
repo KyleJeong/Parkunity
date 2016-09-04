@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+p{
+	display : inline-block;
+}
+#boardWrap
+{
+    margin: 40px auto;
+    height: 690px;
+    width: 1000px;
+}
+
+#boardListWrap
+{
+    width: 800px;
+    height: 590px;
+    float: right;
+     background-image: url(../image/board/notice.jpg);
+	background-repeat: no-repeat;
+	background-size: 106% 101%;
+	background-position: center center;
+}
+#form{
+	margin : 20px;
+}
+/*제목 */
+#titleDiv
+{
+	margin-top : 100px;
+	margin-bottom : 30px;
+}
+#titleLabel
+{
+	margin-left : 140px;
+}
+
+#titleId
+{
+	width : 360px;
+	margin-left : 20px;
+}
+
+/*시간*/
+#startDateLabel
+{
+	margin-left : 140px;
+}
+#startDateId
+{
+	margin-left : 16px;
+}
+
+/*인원수, 준비물*/
+#etcDiv
+{
+	margin-top : 40px;
+	margin-bottom : 30px;
+}
+
+#peopleLabel
+{
+	margin-left : 140px;
+}
+#peopleId
+{
+	margin-left : 20px;
+	width : 50px;
+}
+#equipmentLabel
+{
+	margin-left : 123px;
+}
+#equipmentId
+{
+	margin-left : 20px;
+	width: 150px;
+}
+
+/*내용*/
+#contentLabel
+{
+	margin-left : 140px;
+}
+#contentId
+{
+	margin-left :  140px;
+	margin-top : 20px;
+}
+/*버튼*/
+#buttonDiv
+{
+	text-align : right;
+	margin-top : -5px;
+	
+}
+#submit
+{
+	margin-right:175px;
+	margin-top: 240px;
+}
+
+
