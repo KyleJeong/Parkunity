@@ -1,5 +1,8 @@
 @CHARSET "UTF-8";
 
+p{
+	display : inline-block;
+}
 #boardWrap
 {
     margin: 40px auto;
@@ -12,12 +15,18 @@
     width: 800px;
     height: 590px;
     float: right;
-    border : 1px solid black;
+     background-image: url(../image/board/notice.jpg);
+	background-repeat: no-repeat;
+	background-size: 106% 101%;
+	background-position: center center;
+}
+#form{
+	margin : 20px;
 }
 /*제목 */
 #titleDiv
 {
-	margin-top : 50px;
+	margin-top : 100px;
 	margin-bottom : 30px;
 }
 #titleLabel
@@ -38,21 +47,13 @@
 }
 #startDateId
 {
-	margin-left : 5px;
-}
-#endDateLabel
-{
-	margin-left : 40px;
-}
-#endDateId
-{
-	margin-left : 20px;
+	margin-left : 16px;
 }
 
 /*인원수, 준비물*/
 #etcDiv
 {
-	margin-top : 30px;
+	margin-top : 40px;
 	margin-bottom : 30px;
 }
 
@@ -83,17 +84,19 @@
 #contentId
 {
 	margin-left :  140px;
-	margin-top : 10px;
+	margin-top : 20px;
 }
 /*버튼*/
 #buttonDiv
 {
 	text-align : right;
-	margin-top : 20px;
+	margin-top : -5px;
+	
 }
 #submit
 {
 	margin-right:175px;
+	margin-top: 240px;
 }
 
 

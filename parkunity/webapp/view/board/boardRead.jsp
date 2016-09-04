@@ -12,7 +12,7 @@
 	<div id="boardWrap">
 		<jsp:include page="./aside.jsp"></jsp:include>
 		<div id="boardListWrap">
-			<form action="#">
+			<form action="#" id="form">
 				<div id="titleDiv">
 					<label for="titleId" id="titleLabel">Title</label>
 					<p id="titleId">오전 8시 축구장에서 축구 할분을 모집합니다</p>
