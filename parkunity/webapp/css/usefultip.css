@@ -3,6 +3,7 @@
 #container{
 }
 
+/* 전체 내용 */
 section{
 	border : 3px solid black;
 	height : 1200px;
@@ -15,12 +16,12 @@ section{
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
-
+/* 제목 */
 #title{
 	margin : 80px 0px 20px 96px;
 	font-size : 30px;
 }
-
+/* 지도 */
 #img{
 	border : 3px solid black;
 	height : 590px;
@@ -31,7 +32,7 @@ section{
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
-
+/* 글 내용 */
 #content{
 	border : 3px solid black;
 	height : 320px;
@@ -42,22 +43,24 @@ section{
 	margin-bottom: auto;
 	background-color : white;
 }
-
+/* 글 적는 텍스트 박스 */
 #tip{
 	width: 764px;
     margin: 37px 10px 10px 95px;
 }
-
+/* 글 목록(처음글과 리플 포함) */
 #list{
 	text-align : left;
 	margin: 30px 0 0 45px ;
 	font-size : 20px;
 	
 }
+/* 처음글 */
 #write{
 	display : inline-block;
 	margin : 10px 0 0 0;
 }
+/* 댓글 */
 #reply{
 	margin : 0 0 0 30px;
 }
