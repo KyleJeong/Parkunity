@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+#container{
+}
+
+section{
+	border : 3px solid black;
+	height : 1200px;
+	width : 1000px;
+	margin-left : auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+#title{
+	margin : 80px 0px 20px 96px;
+	font-size : 30px;
+}
+
+#img{
+	border : 3px solid black;
+	height : 590px;
+	width : 800px;
+	margin-left : auto;
+	margin-right: auto;
+	background-image: url(../image/usefultip/map.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+#content{
+	border : 3px solid black;
+	height : 320px;
+	width : 800px;
+	margin-left : auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: auto;
+	background-color : white;
+}
+
+#tip{
+	width: 764px;
+    margin: 37px 10px 10px 95px;
+}
+
+#list{
+	text-align : left;
+	margin: 30px 0 0 45px ;
+	font-size : 20px;
+	
+}
+#write{
+	display : inline-block;
+	margin : 10px 0 0 0;
+}
+#reply{
+	margin : 0 0 0 30px;
+}
+
+
+
+
