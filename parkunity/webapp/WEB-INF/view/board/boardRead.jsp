@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>운동 게시판</title>
 <link href="../../css/boardRead.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<jsp:include page="../include/header.jsp"></jsp:include>
