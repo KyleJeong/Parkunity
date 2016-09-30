@@ -41,7 +41,17 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   
-  <!-- 스프링MVC의 dispatcherServlet 설정 -->
+  <!-- 스트럿2의 설정 -->
+   <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+  
+  <!-- 스프링MVC의 dispatcherServlet 설정 
    <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>
@@ -60,5 +70,5 @@
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  
+  -->
 </web-app>
