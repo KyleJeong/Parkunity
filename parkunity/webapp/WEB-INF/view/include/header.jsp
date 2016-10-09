@@ -16,10 +16,10 @@
 		<div id="naviWrap">
 			<ul id="naviList">
 				<li class="naviItem"><a class="naviItemLink" href="../about/about.jsp">About</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="">Creator</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="">Contact us</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="">Sign up</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="">Login</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="../creator/creator.jsp">Creator</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="../contactUs/contactUs.jsp">Contact us</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="../signUp/signUp01.jsp">Sign up</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="../login/login.jsp">Login</a></li>
 			</ul>
 		</div>
 	</header>
