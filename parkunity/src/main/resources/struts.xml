@@ -11,5 +11,20 @@
 		</action>
     </package>
     
+    <package name="category" namespace="/" extends="struts-default">
+		<action name="board" class="parkunity.action.BoardAction" method = "categorySelect">
+			<result name="success">/WEB-INF/view/board/boardList.jsp</result>
+		</action>
+		<action name="categoryinsert" class="parkunity.action.BoardAction" method = "categoryInsert">
+			<result name="redirect" type="redirect">${url}</result>
+		</action>
+		<action name="categorydelete" class="parkunity.action.BoardAction" method = "categoryDelete">
+			<result name="redirect" type="redirect">${url}</result>
+		</action>
+		<action name="categoryupdate" class="parkunity.action.BoardAction" method = "categoryUpdate">
+			<result name="redirect" type="redirect">${url}</result>
+		</action>
+    </package>
+    
     
 </struts>

@@ -1,19 +1,92 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <head>
-<link href="../../css/aside.css" rel="stylesheet" type="text/css">
+<link href="<c:url value="/resources/theme/css/aside.css" />" rel="stylesheet">
 </head>
 <body>
+
 <aside id="asideWrap">
 	<h3 id="title">운동</h3>
+	<c:set var="i" value="0"/>
 	<ul id="list">
-		<li>축구</li>
-		<li>농구</li>
-		<li>야구</li>
-		<li>족구</li>
-		<li>배드민턴</li>
-		<li>자전거</li>
-		<li>스케이트보드</li>
+	 <c:forEach items="${category}" var="todo">
+		<li>${todo.sports}
+				<a href="#" id="delete_${todo.idx}" onclick="btnDelete(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/usefultip/delete.png" />" height="20" width="20"/></a>
+	  	    	<a href="#" id="modify_${todo.idx}" onclick="btnUpdate(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/board/pen.png" />" height="20" width="20"/></a>
+  	    </li>
+		<c:set var="i" value="${i+1}"/>
+	</c:forEach>
 	</ul>
+	<div id="btn">
+		<button id="btnModify" onclick="btnModify();">Modify</button>
+		<button id="btnAdd" onclick="btnAdd();">Add</button>
+	</div>
+	
+	<input type="hidden" value="${i}" id="size"/>
  </aside>
+ 
+
+ <form id="insert" action="categoryinsert" method="post">
+	<input type="hidden" id="sports" name="sports" value=""/>
+ </form>
 </body>
+<script src="<c:url value="/bower_components/jquery/dist/jquery.min.js" />"></script>
+<script>
+
+var flag;
+
+function btnModify(){
+	
+	var size = parseInt($("#size").val());
+	
+	if(flag == 0 || flag == undefined){
+		for(var i = 1; i<size + 1; i++){
+			$("#list > li > a").show();
+		}
+		flag = 1;
+	}else{
+		for(var i = 1; i<size + 1; i++){
+			$("#list > li > a").hide();
+		}
+		flag = 0;
+	}
+	
+}
+
+function btnAdd(){
+	
+	var text = prompt("삽입할 카테고리를 입력하세요");
+	
+	if(text == null){
+		return false;
+	}else{
+		$("#sports").val(text);
+		$("#insert").submit();
+	}
+	
+}
+
+function btnDelete(idx){
+	
+	if(confirm("삭제 시, 카테고리의 데이터가 모두 삭제됩니다.\n 삭제 하시겠습니까?")){
+		location.href = "categorydelete?idx="+idx;
+	}else{
+		return false;
+	}
+	
+}
+
+function btnUpdate(idx){
+	
+	var text = prompt("변경할 운동명을 입력하세요");
+	
+	if(text == null){
+		return false;
+	}else{
+		location.href = "categoryupdate?idx="+idx+"&sports="+text;
+	}
+	
+	
+}
+</script>
