@@ -16,10 +16,11 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="url">
-            <value>jdbc:mysql://localhost/test</value>
+        <value>jdbc:mysql://52.78.191.107/test</value>
+            <!-- <value>jdbc:mysql://localhost/test</value> -->
         </property>
         <property name="username">
-            <value>root</value>
+            <value>dev</value>
         </property>
         <property name="password">
             <value>1111</value>

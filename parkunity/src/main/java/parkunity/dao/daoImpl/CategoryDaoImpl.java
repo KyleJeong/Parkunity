@@ -17,22 +17,22 @@ public class CategoryDaoImpl implements CategoryDao{
 	private SqlSession sqlSession;
 	
 	public List<Category> getAllCategory(){
-		return sqlSession.selectList("META-INF.mybatis.mapper.CategoryMapper.selectCategory");
+		return sqlSession.selectList("mapper.CategoryMapper.selectCategory");
 	}
 	
 	public void categoryDelete(int idx){
-		sqlSession.delete("META-INF.mybatis.mapper.CategoryMapper.categoryDelete", idx);
+		sqlSession.delete("mapper.CategoryMapper.categoryDelete", idx);
 	}
 	
 	public int categoryInsert(Category category){
-		int n = sqlSession.insert("META-INF.mybatis.mapper.CategoryMapper.insertCategory", category);
+		int n = sqlSession.insert("mapper.CategoryMapper.insertCategory", category);
 		
 		return n;
 	}
 	
 	public int categoryUpdate(Map<String,Object> param){
 		
-		int n = sqlSession.insert("META-INF.mybatis.mapper.CategoryMapper.categoryUpdate", param);
+		int n = sqlSession.insert("mapper.CategoryMapper.categoryUpdate", param);
 		
 		return n;
 	}

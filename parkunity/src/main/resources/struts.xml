@@ -11,20 +11,55 @@
 		</action>
     </package>
     
-    <package name="category" namespace="/" extends="struts-default">
-		<action name="board" class="parkunity.action.BoardAction" method = "categorySelect">
+     <package name="board" namespace="/" extends="struts-default">
+		<action name="board" class="parkunity.action.board.BoardAction" method="boardList">
 			<result name="success">/WEB-INF/view/board/boardList.jsp</result>
 		</action>
-		<action name="categoryinsert" class="parkunity.action.BoardAction" method = "categoryInsert">
+    </package>
+    
+    <package name="category" namespace="/" extends="struts-default">
+		<action name="category" class="parkunity.action.board.CategoryAction" method = "categorySelect">
+			<result name="success">/WEB-INF/view/board/aside.jsp</result>
+		</action>
+		<action name="categoryinsert" class="parkunity.action.board.CategoryAction" method = "categoryInsert">
 			<result name="redirect" type="redirect">${url}</result>
 		</action>
-		<action name="categorydelete" class="parkunity.action.BoardAction" method = "categoryDelete">
+		<action name="categorydelete" class="parkunity.action.board.CategoryAction" method = "categoryDelete">
 			<result name="redirect" type="redirect">${url}</result>
 		</action>
-		<action name="categoryupdate" class="parkunity.action.BoardAction" method = "categoryUpdate">
+		<action name="categoryupdate" class="parkunity.action.board.CategoryAction" method = "categoryUpdate">
 			<result name="redirect" type="redirect">${url}</result>
 		</action>
     </package>
     
+    <package name="about" namespace="/" extends="struts-default">
+		<action name="about" class="parkunity.action.header.AboutAction" method = "aboutSelect">
+			<result name="success">/WEB-INF/view/about/about.jsp</result>
+		</action>
+    </package>
+    
+    <package name="creator" namespace="/" extends="struts-default">
+		<action name="creator" class="parkunity.action.header.CreatorAction" method = "creatorSelect">
+			<result name="success">/WEB-INF/view/creator/creator.jsp</result>
+		</action>
+    </package>
+    
+    <package name="contactus" namespace="/" extends="struts-default">
+		<action name="contactus" class="parkunity.action.header.ContactAction" method = "contactusSelect">
+			<result name="success">/WEB-INF/view/contactUs/contactUs.jsp</result>
+		</action>
+    </package>
+    
+    <package name="signup" namespace="/" extends="struts-default">
+		<action name="signup" class="parkunity.action.header.SignupAction" method = "signupSelect">
+			<result name="success">/WEB-INF/view/signUp/signUp01.jsp</result>
+		</action>
+    </package>
+    
+    <package name="login" namespace="/" extends="struts-default">
+		<action name="login" class="parkunity.action.header.LoginAction" method = "loginSelect">
+			<result name="success">/WEB-INF/view/login/login.jsp</result>
+		</action>
+    </package>
     
 </struts>

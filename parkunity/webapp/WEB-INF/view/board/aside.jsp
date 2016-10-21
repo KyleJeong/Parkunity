@@ -5,15 +5,16 @@
 <link href="<c:url value="/resources/theme/css/aside.css" />" rel="stylesheet">
 </head>
 <body>
-
+<c:set var ="category" value="${param.category}"/>
 <aside id="asideWrap">
 	<h3 id="title">운동</h3>
 	<c:set var="i" value="0"/>
 	<ul id="list">
 	 <c:forEach items="${category}" var="todo">
-		<li>${todo.sports}
-				<a href="#" id="delete_${todo.idx}" onclick="btnDelete(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/usefultip/delete.png" />" height="20" width="20"/></a>
-	  	    	<a href="#" id="modify_${todo.idx}" onclick="btnUpdate(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/board/pen.png" />" height="20" width="20"/></a>
+		<li>
+			<a href="board?type=${todo.type}&sports=${todo.sports}">${todo.sports}</a>
+			<a href="#" class="mo" id="delete_${todo.idx}" onclick="btnDelete(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/usefultip/delete.png" />" height="20" width="20"/></a>
+	  	    <a href="#" class="mo" id="modify_${todo.idx}" onclick="btnUpdate(${todo.idx});"style="display:none"><img src="<c:url value="/resources/image/board/pen.png" />" height="20" width="20"/></a>
   	    </li>
 		<c:set var="i" value="${i+1}"/>
 	</c:forEach>
@@ -29,6 +30,7 @@
 
  <form id="insert" action="categoryinsert" method="post">
 	<input type="hidden" id="sports" name="sports" value=""/>
+	<input type="hidden" id="type" name="type" value=""/>
  </form>
 </body>
 <script src="<c:url value="/bower_components/jquery/dist/jquery.min.js" />"></script>
@@ -42,12 +44,12 @@ function btnModify(){
 	
 	if(flag == 0 || flag == undefined){
 		for(var i = 1; i<size + 1; i++){
-			$("#list > li > a").show();
+			$("#list > li > .mo").show();
 		}
 		flag = 1;
 	}else{
 		for(var i = 1; i<size + 1; i++){
-			$("#list > li > a").hide();
+			$("#list > li > .mo").hide();
 		}
 		flag = 0;
 	}
@@ -56,12 +58,14 @@ function btnModify(){
 
 function btnAdd(){
 	
-	var text = prompt("삽입할 카테고리를 입력하세요");
+	var text1 = prompt("삽입할 카테고리를 입력하세요");
+	var text2 = prompt("삽입할 타입(숫자) 입력하세요");
 	
-	if(text == null){
+	if(text1 == null && text2 == null){
 		return false;
 	}else{
-		$("#sports").val(text);
+		$("#sports").val(text1);
+		$("#type").val(text2);
 		$("#insert").submit();
 	}
 	

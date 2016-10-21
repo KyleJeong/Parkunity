@@ -4,14 +4,14 @@ public class Category {
 	
 	private String sports;
 	private int idx;
-	private String type;
+	private int type;
 	private String sort;
 	private int park_idx;
 	
 	public Category(){
 		
 	}
-	public Category(String sports, int idx,String type, String sort, int park_idx){
+	public Category(String sports, int idx, int type, String sort, int park_idx){
 		super();
 		this.sports = sports;
 		this.sort = sort;
@@ -19,10 +19,10 @@ public class Category {
 		this.idx = idx;
 		this.park_idx = park_idx;
 	}
-	public String getType() {
+	public int getType() {
 		return type;
 	}
-	public void setType(String type) {
+	public void setType(int type) {
 		this.type = type;
 	}
 	public String getSort() {

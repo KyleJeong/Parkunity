@@ -1,4 +1,4 @@
-package parkunity.action;
+package parkunity.action.board;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,13 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import parkunity.domain.Category;
 import parkunity.service.CategoryService;
 
-public class BoardAction {
+public class CategoryAction {
 	
 	@Autowired	
 	private CategoryService categoryService;
 	
 	private List<Category> category;
 	private String sports;
+	private int type;
 	private String url;
 	private int idx;
 	
@@ -31,6 +32,14 @@ public class BoardAction {
 		return url;
 	}
 	
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	public String getSports() {
 		return sports;
 	}
@@ -55,7 +64,7 @@ public class BoardAction {
 	
 	public String categoryInsert(){
 		
-		Category category = new Category(sports,0,"ss","aa",1);
+		Category category = new Category(sports,0,type,"aa",1);
 		
 		int n = categoryService.categoryInsert(category);;
 		url = "board"; 

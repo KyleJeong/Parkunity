@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="META-INF.mybatis.mapper.CategoryMapper">
+<mapper namespace="mapper.CategoryMapper">
 
 	 <resultMap id="categoryResultMap" type="parkunity.domain.Category">
         <id property="idx" column="idx" />
@@ -12,10 +12,10 @@
     </resultMap>
 	
     <select id="selectCategory" parameterType="int" resultMap="categoryResultMap">
-        SELECT sports, idx FROM category
+        SELECT sports, idx, type FROM category
     </select>
 
-	 <insert id="insertCategory" parameterType="parkunity.domain.Category" >
+	 <insert id="insertCategory" parameterType="Category" >
         INSERT INTO category values(#{idx},#{type},#{sports},#{sort},#{park_idx})
     </insert>
     
