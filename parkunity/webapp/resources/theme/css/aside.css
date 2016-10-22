@@ -4,6 +4,7 @@
 	border: 1px solid black;
     float: left;
     width: 180px;
+    height: inherit;
 }
 
 #title
@@ -25,4 +26,17 @@
     border: 1px solid black;
     text-align: center;
     margin: 20px;
+}
+
+#btn
+{
+	text-align: center;
+	width: inherit;
+    height: 40px;
+    margin: 455px 0 0 0;
+}
+
+.mo
+{
+	float: left;
 }

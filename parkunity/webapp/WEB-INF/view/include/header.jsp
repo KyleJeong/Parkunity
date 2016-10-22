@@ -11,15 +11,15 @@
 <body>
 	<header id="headerWrap">
 		<div id="logoImgWrap">
-			<a href="../main/main.jsp"><img id="logoImg" src="http://placehold.it/200x40"></a>
+			<a href="index"><img id="logoImg" src="http://placehold.it/200x40"></a>
 		</div>
 		<div id="naviWrap">
 			<ul id="naviList">
-				<li class="naviItem"><a class="naviItemLink" href="../about/about.jsp">About</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="../creator/creator.jsp">Creator</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="../contactUs/contactUs.jsp">Contact us</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="../signUp/signUp01.jsp">Sign up</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="../login/login.jsp">Login</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="about">About</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="creator">Creator</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="contactus">Contact us</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="signup">Sign up</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="login">Login</a></li>
 			</ul>
 		</div>
 	</header>
