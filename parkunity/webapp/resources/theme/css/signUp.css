@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+#signUpWrap
+{
+	width: 1200px;
+	height: 800px;
+    margin: 20px auto;
+    border: 3px solid black;
+}
+
+#title
+{
+	width: 800px;
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#signUpItemListWrap
+{
+	
+}
+
+#signUpItemList
+{
+	list-style: none;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.signUpItem
+{
+    font-size: 20px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#signUpEssentialWrap
+{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#signUpLabelWrap
+{
+    float: left;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+#signUpInputWrap
+{
+	float: left;
+    width: 580px;
+}
+
+.signUpLabel
+{
+	display: block;
+    margin-top: 53px;
+}
+
+.signUpInput
+{
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin-top: 50px;
+}
+
+#signUpCheckboxWrap
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: 57px;
+}
+
+#signUpOptionalWrap
+{
+    width: 800px;
+    line-height: 30px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+#signUpOptionalCheckBox
+{
+    margin-left: 20px;
+}
+
+#signUpOptionalCheckBox label
+{
+	margin-right: 30px;
+}
+
+#signUpOptionalNoti
+{
+	margin-left: 20px;
+}
