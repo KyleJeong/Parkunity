@@ -5,8 +5,8 @@
 <struts>
     <constant name="struts.devMode" value="true" />
     
-    <package name="sample" namespace="/" extends="struts-default">
-		<action name="index" class="parkunity.action.HelloAction">
+    <package name="index" namespace="/" extends="struts-default">
+		<action name="index" class="parkunity.action.main.MainAction" >
 			<result name="success">/WEB-INF/view/main/main.jsp</result>
 		</action>
     </package>
@@ -54,11 +54,23 @@
 		<action name="signup" class="parkunity.action.header.SignupAction" method = "signupSelect">
 			<result name="success">/WEB-INF/view/signUp/signUp01.jsp</result>
 		</action>
+		<action name="signup02" class="parkunity.action.header.SignupAction" method = "signupSelect02">
+			<result name="success">/WEB-INF/view/signUp/signUp02.jsp</result>
+		</action>
+		<action name="signupinsert" class="parkunity.action.header.SignupAction" method = "signupInsert">
+			<result name="success">/WEB-INF/view/signUp/signUp02.jsp</result>
+		</action>
     </package>
     
     <package name="login" namespace="/" extends="struts-default">
 		<action name="login" class="parkunity.action.header.LoginAction" method = "loginSelect">
 			<result name="success">/WEB-INF/view/login/login.jsp</result>
+		</action>
+    </package>
+    
+    <package name="usefultip" namespace="/" extends="struts-default">
+		<action name="usefultip" class="parkunity.action.usefultip.UsefulTipAction">
+			<result name="success">/WEB-INF/view/usefultip/usefultip.jsp</result>
 		</action>
     </package>
     

@@ -6,7 +6,6 @@
         <setting name="jdbcTypeForNull" value="NULL"/>
     </settings>
     <typeAliases>
-        <typeAlias alias="User" type="parkunity.domain.User" />
         <typeAlias alias="Category" type="parkunity.domain.Category" />
     </typeAliases>
 </configuration>

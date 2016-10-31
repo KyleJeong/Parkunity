@@ -32,7 +32,6 @@
         <property name="configLocation" value="classpath:META-INF/mybatis/mybatis.Spring.xml" />
         <property name="mapperLocations">
             <list>
-                <value>classpath:META-INF/mybatis/mapper/UserMapper.xml</value>
                 <value>classpath:META-INF/mybatis/mapper/CategoryMapper.xml</value>
             </list>
         </property>

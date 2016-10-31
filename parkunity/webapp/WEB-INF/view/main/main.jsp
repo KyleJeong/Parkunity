@@ -35,10 +35,11 @@
   <aside id="sidebar">
   	<ul>
   		<li>
-  		<a href="../board/boardList.jsp"><img src="<c:url value="/resources/image/main/soccer.png" />" alt="" id="soccer" width="80" height="80" ></a>
+  		<a href="board"><img src="<c:url value="/resources/image/main/soccer.png" />" alt="" id="soccer" width="80" height="80" ></a>
   		<p>운동</p>
   		</li>
-  		<li><img src="<c:url value="/resources/image/main/info.png" />" alt=""  width="80" height="80">
+  		<li>
+  		<a href="usefultip"><img src="<c:url value="/resources/image/main/info.png" />" alt=""  width="80" height="80"></a>
   		<p>꿀팁</p>
   		</li>
   	</ul>
