@@ -9,14 +9,15 @@ public class SignupAction {
 	
 	@Autowired
 	private SignupService signupService;
+	
 	private String password; 
 	private String email;
 	private String name;
 	private String user_id;
-	private int emailCheck;
-	private String priority;
 	private String url;
+	private int idx;
 	
+
 	public String signupSelect() {
         return "success";
     }
@@ -27,10 +28,10 @@ public class SignupAction {
     
     public String signupInsert(){
 		
-		User user = new User(password, email, name, user_id,priority, emailCheck);
+		User user = new User(password, email, name, user_id,0);
 		
 		int n = signupService.signupInsert(user);
-		url = "signupcomplet"; 
+		//url = "login"; 
 		return "redirect";
 		
 	}
@@ -67,28 +68,20 @@ public class SignupAction {
 		this.user_id = user_id;
 	}
 
-	public int getEmailCheck() {
-		return emailCheck;
-	}
-
-	public void setEmailCheck(int emailCheck) {
-		this.emailCheck = emailCheck;
-	}
-
-	public String getPriority() {
-		return priority;
-	}
-
-	public void setPriority(String priority) {
-		this.priority = priority;
-	}
-
 	public String getUrl() {
 		return url;
 	}
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public int getIdx() {
+		return idx;
+	}
+
+	public void setIdx(int idx) {
+		this.idx = idx;
 	}
 	
 	

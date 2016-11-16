@@ -7,5 +7,6 @@
     </settings>
     <typeAliases>
         <typeAlias alias="Category" type="parkunity.domain.Category" />
+        <typeAlias alias="User" type="parkunity.domain.User" />
     </typeAliases>
 </configuration>

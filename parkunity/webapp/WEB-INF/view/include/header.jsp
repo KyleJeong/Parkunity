@@ -15,11 +15,14 @@
 		</div>
 		<div id="naviWrap">
 			<ul id="naviList">
+				<c:if test="${!empty sessionScope.id }">
+					<li class="naviItem">${sessionScope.id } 환영합니다.<a href="logout">(logout)</a> </li>
+				</c:if>
 				<li class="naviItem"><a class="naviItemLink" href="about">About</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="creator">Creator</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="contactus">Contact us</a></li>
 				<li class="naviItem"><a class="naviItemLink" href="signup">Sign up</a></li>
-				<li class="naviItem"><a class="naviItemLink" href="login">Login</a></li>
+				<li class="naviItem"><a class="naviItemLink" href="loginform">Login</a></li>
 			</ul>
 		</div>
 	</header>

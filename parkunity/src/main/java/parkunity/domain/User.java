@@ -13,32 +13,17 @@ public class User implements Serializable{
 	private String email;
 	private String name;
 	private String user_id;
-	private int emailCheck;
-	private String priority;
 	private int idx;
 	
-	public User(String password, String email, String name, String user_id, String priority, int emailCheck){
+	public User(String password, String email, String name, String user_id ,int idx){
 		this.password = password;
 		this.email = email;
 		this.name = name;
 		this.user_id = user_id;
-		this.priority = priority;
-		this.emailCheck = emailCheck;
+		this.idx = idx;
 	}
 	
 	
-	public int getEmailCheck() {
-		return emailCheck;
-	}
-	public void setEmailCheck(int emailCheck) {
-		this.emailCheck = emailCheck;
-	}
-	public String getPriority() {
-		return priority;
-	}
-	public void setPriority(String priority) {
-		this.priority = priority;
-	}
 	public String getPassword() {
 		return password;
 	}

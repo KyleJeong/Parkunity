@@ -3,6 +3,14 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <head>
 <link href="<c:url value="/resources/theme/css/aside.css" />" rel="stylesheet">
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="<c:url value="/bower_components/bootstrap/dist/css/bootstrap.min.css" />">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="<c:url value="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="<c:url value="/bower_components/bootstrap/dist/js/bootstrap.min.js" />"></script>
 </head>
 <body>
 <c:set var ="category" value="${param.category}"/>

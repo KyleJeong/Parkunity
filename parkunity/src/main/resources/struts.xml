@@ -58,17 +58,26 @@
 			<result name="success">/WEB-INF/view/signUp/signUp02.jsp</result>
 		</action>
 		<action name="signupinsert" class="parkunity.action.header.SignupAction" method = "signupInsert">
-			<result name="success">/WEB-INF/view/signUp/signUp02.jsp</result>
+		    <result name="redirect" type="chain">login</result>
 		</action>
     </package>
     
     <package name="login" namespace="/" extends="struts-default">
-		<action name="login" class="parkunity.action.header.LoginAction" method = "loginSelect">
+    	
+    	<action name="loginform" class="parkunity.action.header.LoginAction" method="loginform">
 			<result name="success">/WEB-INF/view/login/login.jsp</result>
+		</action>
+    
+		<action name="login" class="parkunity.action.header.LoginAction">
+			<result name="redirect" type="redirect">${url}</result>
+		</action>
+		
+		<action name="logout" class="parkunity.action.header.LoginOutAction" method="logout">
+			<result name="success" type="redirect">/index</result>
 		</action>
     </package>
     
-    <package name="usefultip" namespace="/" extends="struts-default">
+    <package name="usefultip" namespace="/" extends="struts-default" >
 		<action name="usefultip" class="parkunity.action.usefultip.UsefulTipAction">
 			<result name="success">/WEB-INF/view/usefultip/usefultip.jsp</result>
 		</action>
